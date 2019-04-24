@@ -1,0 +1,31 @@
+{
+	"type": "config",
+	"title": "Rclone",
+	"id": "conf.service.rclone",
+	"queryinfo": {
+		"xpath": "/config/services/rclone",
+		"iterable": false
+	},
+	"properties": {
+		"filesystem": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"uuid": {
+						"type": "string",
+						"format": "uuidv4"
+					},
+					"name": {
+						"type": "string",
+						"minLength": 1
+					},
+					"self-mntentref": {
+						"type": "string",
+						"format": "uuidv4"
+					}
+				}
+			}
+		}
+	}
+}

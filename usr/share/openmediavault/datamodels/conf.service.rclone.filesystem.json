@@ -1,0 +1,27 @@
+{
+	"type": "config",
+	"title": "Rclone Filesystem",
+	"id": "conf.service.rclone.filesystem",
+	"queryinfo": {
+		"xpath": "/config/services/rclone/filesystem",
+		"iterable": true,
+		"idproperty": "uuid"
+	},
+	"properties": {
+		"uuid": {
+			"description": "The unique identifier for a union mount",
+			"type": "string",
+			"format": "uuidv4"
+		},
+		"name": {
+			"description": "A virtual label for a union mount",
+			"type": "string",
+			"minLength": 1
+		},
+		"self-mntentref": {
+			"description": "Reference to a mount entity",
+			"type": "string",
+			"format": "uuidv4"
+		}
+	}
+}

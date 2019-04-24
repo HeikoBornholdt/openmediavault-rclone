@@ -1,0 +1,13 @@
+Source: openmediavault-rclone
+Section: net
+Priority: optional
+Maintainer: Heiko Bornholdt <heiko@bornholdt.it>
+Standards-Version: 3.9.6
+XB-Plugin-Section: filesystems
+
+Package: openmediavault-rclone
+Architecture: all
+Depends: openmediavault (>= 4.1.7),
+         ${misc:Depends}
+Description: Rclone mount plugin for OpenMediaVault.
+ Makes it possible to mount rclone remotes.

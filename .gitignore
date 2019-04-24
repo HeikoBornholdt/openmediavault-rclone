@@ -1,0 +1,7 @@
+.DS_Store
+
+debian/openmediavault-*
+debian/.debhelper
+debian/files
+debian/source
+debian/debhelper-build-stamp

@@ -1,0 +1,23 @@
+[{
+	"type": "rpc",
+	"id": "rpc.rclone.set",
+	"params": {
+		"type": "object",
+		"properties": {
+			"uuid": {
+				"type": "string",
+				"format": "uuidv4",
+				"required": true
+			},
+			"name": {
+				"type": "string",
+				"required": true
+			},
+			"self-mntentref": {
+				"type": "string",
+				"format": "uuidv4",
+				"required": true
+			}
+		}
+	}
+}]
